@@ -2,7 +2,7 @@ module tb_jeff();
     logic [31:0] no, me, gusta;
     logic clk, nRST;
 
-    logic commitA; commitA1;
+    logic commitA; commitA1; commitA2;
 
     always_ff@(posedge clk, negedge nRST) begin
         if(!nRST) begin
