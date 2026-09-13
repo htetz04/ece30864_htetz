@@ -2,6 +2,8 @@ module tb_jeff();
     logic [31:0] no, me, gusta;
     logic clk, nRST;
 
+    logic commitE;
+
     always_ff@(posedge clk, negedge nRST) begin
         if(!nRST) begin
             no <= 32'h0;
